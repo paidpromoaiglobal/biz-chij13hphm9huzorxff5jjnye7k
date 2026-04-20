@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2C1A4E">
+<title>Studieo7 Family Salon | Best Salon in Puducherry | Hair, Spa &amp; Beauty Services</title>
+<meta name="description" content="Visit Studieo7 Family Salon in Heritage Town, Puducherry for expert haircuts, hair botox, beard grooming, head massage, and spa services. Rated 4.9/5 by 275+ customers. Open daily 10 AM – 8 PM. Call 094871 07444.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#1e293b;background:#fff;-webkit-font-smoothing:antialiased}
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.45);text-decoration:none;transition:transform .2s}.wa-float:hover{transform:scale(1.1)}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(255,255,255,0.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.06);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:60px;transition:box-shadow .3s}
+.nav-brand{font-weight:700;font-size:1rem;color:#2C1A4E;max-width:55%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-cta{background:#2C1A4E;color:#fff;padding:9px 20px;border-radius:50px;text-decoration:none;font-size:.85rem;font-weight:600;white-space:nowrap;flex-shrink:0}
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-parallax{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=85&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(160deg,#2C1A4Eee 0%,#2C1A4E99 50%,#F5E6D3bb 100%)}
+.hero-inner{position:relative;z-index:2;padding:100px 24px 60px;color:#fff;max-width:680px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);padding:6px 16px;border-radius:50px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:700;line-height:1.15;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:clamp(1rem,2.5vw,1.15rem);opacity:.88;line-height:1.65;margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:#C9A96E;color:#fff;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem;transition:opacity .2s}
+.btn-ghost{background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.5);color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:500;font-size:.95rem}
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.08)}
+.stat{padding:22px 16px;text-align:center;border-right:1px solid #f1f5f9}
+.stat:last-child{border:none}
+.stat-n{font-size:1.7rem;font-weight:700;color:#2C1A4E;line-height:1}
+.stat-l{font-size:.72rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.07em;margin-top:4px}
+/* SECTIONS */
+section{padding:64px 5vw}
+.container{max-width:960px;margin:0 auto}
+.sec-head{text-align:center;margin-bottom:40px}
+.sec-head h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:#0f172a;margin-bottom:8px}
+.sec-head p{color:#64748b;font-size:.95rem}
+/* ABOUT */
+.about-wrap{display:grid;grid-template-columns:1fr;gap:32px}
+@media(min-width:768px){.about-wrap{grid-template-columns:1fr 1fr;align-items:center}}
+.about-img-wrap{position:relative;border-radius:16px;overflow:hidden}
+.about-img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.about-badge{position:absolute;bottom:16px;left:16px;background:#2C1A4E;color:#fff;padding:10px 16px;border-radius:8px;font-size:.82rem;font-weight:600}
+.about-text h2{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:700;color:#0f172a;margin-bottom:16px;text-align:left}
+.about-text p{color:#475569;line-height:1.8;margin-bottom:12px;font-size:.95rem}
+.hl-list{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:6px}
+.hl-list li{padding:8px 12px 8px 32px;position:relative;background:#f8fafc;border-radius:6px;color:#334155;font-size:.88rem}
+.hl-list li:before{content:'✓';color:#C9A96E;position:absolute;left:10px;font-weight:700}
+/* SERVICES */
+.services-bg{background:#f8fafc}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:480px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{background:#fff;border-radius:12px;padding:24px;border:1px solid #e2e8f0;position:relative;transition:transform .2s,box-shadow .2s}
+.svc-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.07)}
+.svc-dot{width:36px;height:36px;background:#2C1A4E18;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:#2C1A4E;font-size:1.1rem}
+.svc-card h3{font-weight:600;color:#0f172a;margin-bottom:8px;font-size:.97rem}
+.svc-card p{color:#64748b;font-size:.87rem;line-height:1.6}
+/* PARALLAX STRIP */
+.parallax-strip{position:relative;min-height:320px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.parallax-strip-bg{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1629909615957-be38d48fbbe4?w=1200&q=80&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
+.parallax-strip-overlay{position:absolute;inset:0;background:#2C1A4Edd}
+.parallax-strip-content{position:relative;z-index:2;text-align:center;color:#fff;padding:48px 24px}
+.parallax-strip-content h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;margin-bottom:12px}
+.parallax-strip-content p{opacity:.85;max-width:560px;margin:0 auto 28px;font-size:1rem}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;transition:opacity .3s}
+.gallery-grid img:hover{opacity:.88}
+/* REVIEWS */
+.reviews-bg{background:#0f172a}
+.rv-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
+@media(min-width:640px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
+.rv-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:22px}
+.rv-stars{color:#fbbf24;font-size:1rem;margin-bottom:10px}
+.rv-text{color:rgba(255,255,255,.72);font-size:.9rem;line-height:1.7;font-style:italic;margin-bottom:14px}
+.rv-author{color:rgba(255,255,255,.5);font-size:.82rem;font-weight:600}
+/* CONTACT */
+.contact-wrap{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:768px){.contact-wrap{grid-template-columns:1fr 1fr}}
+.contact-info{display:flex;flex-direction:column;gap:16px}
+.ci-item{display:flex;gap:14px;align-items:flex-start}
+.ci-icon{width:42px;height:42px;background:#2C1A4E15;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.ci-item h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:#94a3b8;margin-bottom:4px}
+.ci-item a{color:#2C1A4E;text-decoration:none;font-weight:600;font-size:.95rem}
+.ci-item p{color:#475569;font-size:.9rem}
+.contact-cta{background:#2C1A4E;border-radius:16px;padding:32px;color:#fff;display:flex;flex-direction:column;gap:16px;justify-content:center}
+.contact-cta h3{font-size:1.3rem;font-weight:700}
+.contact-cta p{opacity:.8;font-size:.9rem}
+.cta-btn-white{background:#fff;color:#2C1A4E;padding:13px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.92rem;display:inline-block;text-align:center}
+.cta-btn-outline{border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;text-align:center;margin-top:8px}
+footer{background:#020617;color:#475569;text-align:center;padding:22px 16px;font-size:.8rem}
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-brand">Studieo7 Family Salon</span>
+  <a href="https://wa.me/919487107444?text=Hi!%20I%20found%20Studieo7%20Family%20Salon%20online%20and%20I'd%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20let%20me%20know%20the%20available%20slots%20and%20services%3F" class="nav-cta">💬 WhatsApp</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-parallax" id="hp"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">⭐ 4.9/5 &nbsp;·&nbsp; Google Rated</div>
+    <h1>Where Every Visit Transforms You</h1>
+    <p>Experience premium family salon services with Puducherry's most trusted team of skilled stylists and beauty experts.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/919487107444?text=Hi!%20I%20found%20Studieo7%20Family%20Salon%20online%20and%20I'd%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20let%20me%20know%20the%20available%20slots%20and%20services%3F" class="btn-primary">Book Your Appointment Today</a>
+      <a href="tel:094871 07444" class="btn-ghost">📞 Call Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-n">4.9/5</div><div class="stat-l">Rating</div></div>
+  <div class="stat"><div class="stat-n">Trusted</div><div class="stat-l">By Locals</div></div>
+  <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Trusted</div></div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-img-wrap">
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEGdy9DVB6awZKrPz67qgsasHcuFR49vhPBPbJV7CVy3OJAfefxfyZgy3N63DOUvRyYf79BTfY8hOi1KjWl5g2HHZ38qEiZtkH3Y0P8hSrkdkmBv9JU9twuut14cKt9kyyLQP_CsL6t2cZw-luRCPsDUmy3yl09xB5q90t0sZP3ZB3mTv19I_zuRVfsr_Ss1qPhMVIVrSFxgK9MgmSXMuGU2WfPCJyxOnUtkhMDQoc9bX8uxFoSS7DgWPSoFn5lfN4JhP2Y-R2Ivz38LfnmokG8-HdXOxp6S4VvCrWcxsjO9aQ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Studieo7 Family Salon" class="about-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=85&fit=crop&auto=format'">
+        <div class="about-badge">✓ Verified Business</div>
+      </div>
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>Studieo7 Family Salon is Puducherry's premier destination for beauty, grooming, and wellness, nestled in the heart of Heritage Town. With a stellar rating of 4.9 out of 5 from over 275 happy clients, we take pride in delivering exceptional salon experiences tailored for every member of your family — from kids to adults, men and women alike.</p><p>Our passionate team of experienced stylists and beauty professionals, including specialists like Rajesh, Ramani, Sharmi, and Sivaraman, are dedicated to making you look and feel your absolute best. Whether you're coming in for a trendy haircut, a rejuvenating head massage, a luxurious hair botox treatment, or a relaxing spa session, Studieo7 is the place where quality meets comfort. Visit us Monday through Sunday from 10:00 AM to 8:00 PM and discover why we're the most recommended family salon in Puducherry.</p>
+        <ul class="hl-list"><li>Rated 4.9/5 by 275+ satisfied customers — Puducherry's most trusted family salon</li><li>Expert team of named specialists including Rajesh, Ramani, Sharmi &amp; Sivaraman</li><li>Open 7 days a week from 10 AM to 8 PM for your convenience</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-bg">
+  <div class="container">
+    <div class="sec-head"><h2>Our Services</h2><p>What we offer</p></div>
+    <div class="svc-grid"><div class="svc-card"><div class="svc-dot">🏥</div><h3>Haircut &amp; Styling</h3><p>Precision haircuts for men, women, and kids delivered by experienced stylists who understand your personal style and comfort.</p></div><div class="svc-card"><div class="svc-dot">💊</div><h3>Hair Botox Treatment</h3><p>Restore shine, smoothness, and vitality to your hair with our professional hair botox service for frizz-free, healthy-looking locks.</p></div><div class="svc-card"><div class="svc-dot">🩺</div><h3>Beard Trimming &amp; Grooming</h3><p>Expert beard shaping and trimming tailored to your face structure, leaving you looking sharp and well-groomed.</p></div><div class="svc-card"><div class="svc-dot">📋</div><h3>Head Massage</h3><p>A deeply relaxing head massage that relieves stress, improves circulation, and leaves you feeling completely refreshed.</p></div><div class="svc-card"><div class="svc-dot">💡</div><h3>Spa &amp; Wellness</h3><p>Indulge in our range of spa treatments designed to relax your body and rejuvenate your skin from head to toe.</p></div><div class="svc-card"><div class="svc-dot">⚕️</div><h3>Skin &amp; Beauty Care</h3><p>Comprehensive facial and skin care treatments using quality products to enhance your natural glow and complexion.</p></div></div>
+  </div>
+</section>
+
+<div class="parallax-strip">
+  <div class="parallax-strip-bg" id="ps"></div>
+  <div class="parallax-strip-overlay"></div>
+  <div class="parallax-strip-content">
+    <h2>Ready to Get Started?</h2>
+    <p>1st Floor, No.26, Eswaran Dharmaraja Kovil St, Viratipatu, Heritage Town, Puducherry, 605001, India</p>
+    <a href="https://wa.me/919487107444?text=Hi!%20I%20found%20Studieo7%20Family%20Salon%20online%20and%20I'd%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20let%20me%20know%20the%20available%20slots%20and%20services%3F" style="background:#C9A96E;color:#fff;padding:13px 32px;border-radius:8px;text-decoration:none;font-weight:700">💬 WhatsApp Us Now</a>
+  </div>
+</div>
+
+<section><div class="container"><div class="sec-head"><h2>Our Clinic</h2><p>A look inside</p></div><div class="gallery-grid"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEGdy9DVB6awZKrPz67qgsasHcuFR49vhPBPbJV7CVy3OJAfefxfyZgy3N63DOUvRyYf79BTfY8hOi1KjWl5g2HHZ38qEiZtkH3Y0P8hSrkdkmBv9JU9twuut14cKt9kyyLQP_CsL6t2cZw-luRCPsDUmy3yl09xB5q90t0sZP3ZB3mTv19I_zuRVfsr_Ss1qPhMVIVrSFxgK9MgmSXMuGU2WfPCJyxOnUtkhMDQoc9bX8uxFoSS7DgWPSoFn5lfN4JhP2Y-R2Ivz38LfnmokG8-HdXOxp6S4VvCrWcxsjO9aQ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Studieo7 Family Salon" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEEb0xTFhncgtjM_S4lhObbgKI0MuXRf5ZiF6l63o2hd8gfmU9GdvNVaR7G2IjVHZTPEwDBZdac5IaANHEK99NwWADfUNDcQBvsWUgL-2GHNcYZ5Uc2Olcn9BP0Zzd3hAJwrdgv8g-oanN0f2oCLtj4tk0OJRmWBIWppsXp0KZP2fL9xG5beV8dkg0VJzrfFUzUBYoheFG_gFVzRzn4iAyamOyn7AGPvWwHOxdbEo-nOeudFpepcoi0SSDCSaH-oSO0qJOiX3FJeFJZFY3HoQeL-MMt1ZhSfpk35frOjm00KH4CZ6Qgt4iUss2Rag3RzmnTz1rJBeVys_FHYqeLkWLkBLLyBWI0WW6otY7UpKUSQf5kGsIOhAGfZzYdaVby2exm4_a4NOTMmtGJBXIDG7pD3NQq6yhh6pzFSyg7u21m1kwtiKoJe2N14eAL9B1m8&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Studieo7 Family Salon" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEFbxyAElrtFp7YlqtqC3qxduynXnSGm9GdvN76t5extKm_ugjOO2g9VNZpL7ztnhX009PmbsV2q1nZEM12CKytBH0IPTX7zAmB3MChfogDbjU8o4qZ9dPLilpAihlgAM_xpcvtSARZW7Xt0HakX_e3VNOJV35u0hsgwnlgkBXDioYrsYsmqwX8ty3BCz7osX4OlxfSdP5zq8h7EigmtF17vB5lgjJHbPBr5QKIMT-mdccJ_eknWZwmTpwmtTS5SaDF24fNRvaYve3sU3d8KhUNg2ZdaIKijugDGCJ7zwwOv1kOJ0cI9JtvqM_4SicmXk6SYS7uHdnKlewAqAjQ8lgHU1tzY7AmXRWHRC9Edp0mX0Mq_ULUd-EwX7uf_DUxuFzRyVKivA0PDiiyTi4EUNq4dJAwvOasDBrw2dnReEvDQh0ir&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Studieo7 Family Salon" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEHP3BO9jsx78ruQDB1HjWtBF49dXp_INN7vp3NlUibhdPt1F5UZKy5tNAMIkU9BRg6wLm7hl5I4u7pmIwR7n0jLrZ42hkVcLLOTumz1nyL7j8O8UXwNKDygQJkusfQm8VkvXUEmhT3o7m28RGBjy96Ji2k6YB04f5pXqWCOcCJFuqUGImcm5iv5oLVdXUVTiDE2A9fDchzeEXOFf0TT52aUC40lMjOLoMlJc8FtVTxONi1xeVBHy5_ANUqwOmK70AfJQ7mQcw70e3rVZp3tU1r5wlivNYJeE07IIxqahOvYjTXS0WLh8R1eVvtmJ2m91d1qYKneyAC1ijYPX4ACJx0wChi8SBlyGc9HSKRoXErfEWXRp9bo2iWr70MdZXPY8zQviLB91K5rSi8vL7UuAWUKO4q-STeUGxQqPqvPHrP6-BIbIvEHEJJOachWucUF&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Studieo7 Family Salon" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEEUgzpytgR2dxFwjv9XaUXanlQWX0Nv408TAoXzOCcNWIQn9IQs14GVA3LW9GkQ0kZLfLeijdw-U6LcdjVEInu1A7PigrCJJNxTjAZ_GL6YcI_okglYgp5vs1O91v047BChRwXuZddpO0yTd8bw13pT0hH_QvD32fkUpzVDfgbrSMONPc_NsYFDB3LrRqetHSP_92lfiPlcG0-B-9bP20dfelJWu2IDR8_OSCx71LUIn-LnAFB-pO9lGnCUeUH-d0i1pQ0iBErlqqjMfVc3QHYNEf-EmdhZFxvS7F93vM2CWhNBFfddfb5RiUpuKLgrZvQmL95dtUjkrD23VUzr2jEQfFWG_rygoHc-GsjUoPa9Sp_nMLjTeQ3qxBCeKAwgd7uTs35YHfBOWGouTmPxNpBC2iIwVSjBNccc_2cJxqWHHsU7Dv1k1_suSBr7XTgJ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Studieo7 Family Salon" loading="lazy" onerror="this.parentElement.remove()"></div></div></section>
+
+<section class="reviews-bg">
+  <div class="container">
+    <div class="sec-head"><h2 style="color:#fff">What Clients Say</h2><p style="color:rgba(255,255,255,.5)">Real reviews from real patients</p></div>
+    <div class="rv-grid"><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"I had hair botox — best service by Ms. Ramani mam. This is the first time I'm visiting here. I would recommend everyone to experience the same here in Studio 7. They all were kind to me. Best service!"</p><div class="rv-author">— Chandra Prieya</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Stylist Rajesh is really good at his work. Posting this after my 2nd visit. Friendly and understandable staff. Will recommend everyone to give it a try."</p><div class="rv-author">— Naveen Krishnan</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"I had an amazing experience at Studieo7. Very good service by Ms. Sharmi. Absolutely recommend the head massage. I'll be back for other services!"</p><div class="rv-author">— Nannan Vazhumani</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"I had my haircut and beard trimming with stylist Sivaraman. He was so experienced and made me feel comfortable the whole time. I will definitely be coming back and recommend this place to anyone."</p><div class="rv-author">— Adhi Suruli</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Very good haircut for my kids and very kind, friendly staff. A wonderful experience for the whole family!"</p><div class="rv-author">— Esari Nagu</div></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-head"><h2>Contact Us</h2><p>We're here to help</p></div>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="ci-item"><div class="ci-icon">📞</div><div><h4>Phone</h4><a href="tel:094871 07444">094871 07444</a></div></div>
+        <div class="ci-item"><div class="ci-icon">📍</div><div><h4>Address</h4><p>1st Floor, No.26, Eswaran Dharmaraja Kovil St, Viratipatu, Heritage Town, Puducherry, 605001, India</p></div></div>
+        <div class="ci-item"><div class="ci-icon">🕐</div><div><h4>Hours</h4><p>Monday: 10:00 AM – 8:00 PM | Tuesday: 10:00 AM – 8:00 PM | Wednesday: 10:00 AM – 8:00 PM | Thursday: 10:00 AM – 8:00 PM | Friday: 10:00 AM – 8:00 PM | Saturday: 10:00 AM – 8:00 PM | Sunday: 10:00 AM – 8:00 PM</p></div></div>
+        <div class="ci-item"><div class="ci-icon">🗺️</div><div><h4>Maps</h4><a href="https://maps.google.com/?cid=13365542646433052509" style="color:#2C1A4E;text-decoration:none;font-weight:600;font-size:.95rem">View on Google Maps</a></div></div>
+      </div>
+      <div class="contact-cta">
+        <h3>Book an Appointment</h3>
+        <p>Get in touch with us today. We respond within minutes on WhatsApp.</p>
+        <a href="https://wa.me/919487107444?text=Hi!%20I%20found%20Studieo7%20Family%20Salon%20online%20and%20I'd%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20let%20me%20know%20the%20available%20slots%20and%20services%3F" class="cta-btn-white">💬 Chat on WhatsApp</a>
+        <a href="tel:094871 07444" class="cta-btn-outline">📞 094871 07444</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Studieo7 Family Salon · 1st Floor, No.26, Eswaran Dharmaraja Kovil St, Viratipatu, Heritage Town, Puducherry, 605001, India</footer>
+<a href="https://wa.me/919487107444?text=Hi!%20I%20found%20Studieo7%20Family%20Salon%20online%20and%20I'd%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20let%20me%20know%20the%20available%20slots%20and%20services%3F" class="wa-float" title="Chat on WhatsApp" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script>
+// Parallax on scroll (desktop only)
+if(window.innerWidth > 768){
+  const hp=document.getElementById('hp'),ps=document.getElementById('ps');
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    if(hp)hp.style.transform='translateY('+y*.3+'px)';
+    if(ps){const r=ps.closest('.parallax-strip').getBoundingClientRect();ps.style.transform='translateY('+(r.top*.2)+'px)'}
+  },{passive:true});
+}
+</script>
+</body></html>
